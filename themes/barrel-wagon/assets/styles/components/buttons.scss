@@ -1,0 +1,14 @@
+.btn {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.btn-outline {
+	border: 1px solid $black;
+
+	&:hover {
+		background: $black;
+		color: $white;
+	}
+}

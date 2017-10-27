@@ -1,0 +1,26 @@
+.banner {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: $zindex-tooltip;
+	background: $white;
+
+	.logo {
+		display: inline-block;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.logo svg {
+		height: 75px;
+		width: auto;
+	}
+
+	a {
+		font-family: $font-family-serif;
+		font-size: $font-size-sm * 0.75;
+	}
+}

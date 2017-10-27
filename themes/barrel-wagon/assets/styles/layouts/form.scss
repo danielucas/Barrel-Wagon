@@ -1,0 +1,62 @@
+.contact-form {
+
+	.gform_wrapper {
+
+		.top_label {
+		
+			//Labels
+			.gfield_label {
+				display: none;
+			}
+		
+		}
+
+	
+
+		ul.gform_fields {
+			text-align: justify;
+
+			li.gfield {
+				margin: 0 0 5px 0;
+				display: inline-block;
+				width: 33.32%;
+				vertical-align: top;
+
+				input,
+				input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+				textarea {
+					width: 100%;
+					@extend .form-control;
+				}
+
+				select {
+					width: 100%;
+					@extend .custom-select;
+					margin: 0 !important;
+				}
+
+				&#field_1_8 {
+					width: 66.6%;
+				}
+			}
+
+		}
+
+		.gform_footer {
+			width: 30.32%;
+
+			input[type="submit"]  {
+				@extend .btn;
+				@extend .btn-sm;
+				@extend .btn-outline-dark;
+				@extend .btn-block;
+				text-transform: uppercase;
+				border-radius: 0 !important;
+				padding-top: .35rem;
+				padding-bottom: .15rem;
+
+			}
+		}
+
+	}
+}

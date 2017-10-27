@@ -1,0 +1,35 @@
+.page-home {
+	z-index: $zindex-tooltip + 2;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-color: $white;
+
+	.home-logo {
+		position: absolute;
+		width: auto;
+		height: auto;
+		top: $spacer;
+		left: $spacer;
+		right: $spacer;
+		bottom: $spacer;
+
+		background: {
+			size: cover;
+			position: top center;
+			attachment: fixed;
+		}
+
+		svg {
+			@include center-both;
+			width: 40%;
+			height: auto;
+			mix-blend-mode: multiply;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+}
